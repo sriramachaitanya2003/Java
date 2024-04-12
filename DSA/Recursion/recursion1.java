@@ -1,0 +1,17 @@
+//recursion is a function that calls itself
+
+public class recursion1 {
+    public static void printNumb(int n) {
+        // this is the base case
+        if (n == 0) {
+            return;
+        }
+        System.out.println(n);
+        printNumb(n - 1);
+    }
+
+    public static void main(String[] args) {
+        int n = 5;
+        printNumb(n);
+    }
+}
